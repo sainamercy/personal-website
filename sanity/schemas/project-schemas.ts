@@ -1,5 +1,5 @@
 const project = {
-    name: 'Project',
+    name: 'project',
     title: 'Projects',
     type: 'document',
     fields: [

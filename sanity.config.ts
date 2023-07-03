@@ -1,6 +1,6 @@
 import { defineConfig } from "sanity";
 import {  deskTool } from "sanity/desk";
-import project from "./sanity/schemas/project-schemas";
+import schemas from "./sanity/schemas";
 
 const config = defineConfig({
     projectId: "plt5qdnx",
@@ -10,7 +10,7 @@ const config = defineConfig({
     basePath: "/admin",
     plugins: [deskTool()],
     schema: {
-        types: [project]
+        types: schemas
     }
 });
 
