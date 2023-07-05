@@ -2,11 +2,11 @@ import Link from "next/link";
 
 function NavBar() {
   return (
-    <nav className="h-16 flex justify-between px-80 items-center text-white absolute top-0 w-full">
-      <Link href="/" className="text-4xl font-semibold">
-        Mercy Saina<span className="text-lime-500 text-6xl">.</span>
+    <nav className="h-24 flex justify-between  items-center text-white z-10 sticky bg-black top-0 w-full">
+      <Link href="/" className="text-4xl font-semibold pl-80">
+        Mercy Saina<span className="text-[#91FF00] text-6xl">.</span>
       </Link>
-      <ul className="flex items-center justify-evenly h-full w-2/5">
+      <ul className="flex items-center justify-evenly h-full w-1/3">
         <li>
           <Link href="/">HOME</Link>
         </li>
@@ -20,7 +20,9 @@ function NavBar() {
           <Link href="#about">CONTACT</Link>
         </li>
       </ul>
-      <Link href="/">Let&apos;s talk</Link>
+      <div className="bg-[#91FF00] w-1/3 h-full flex justify-center items-center">
+        <Link href="/">Let&apos;s talk</Link>
+      </div>
     </nav>
   );
 }
