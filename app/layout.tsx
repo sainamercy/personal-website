@@ -9,6 +9,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "Mercy Saina",
   description: "Web Personal Portfolio",
+  keywords: "Mercy Saina, Web Developer, Frontend Developer, React, Next.js",
 };
 
 export default function RootLayout({

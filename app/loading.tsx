@@ -1,7 +1,9 @@
 function loading() {
   return (
-    <div>loading</div>
-  )
+    <div className="h-screen w-full flex justify-center items-center">
+      loading
+    </div>
+  );
 }
 
-export default loading
+export default loading;
