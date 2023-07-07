@@ -2,13 +2,15 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Image from "next/image";
 import TypeAnimation from "./components/TypeAnimation";
+import { FaArrowRight } from "react-icons/fa";
+import SideSkills from "./components/SideSkills";
 
 export default function Home() {
   return (
-    <main>
-      <section className="h-screen">
+    <main className="scroll-smooth">
+      <section className="h-screen" id="home">
         <NavBar />
-        <div className="flex relative h-[90%]">
+        <div className="flex h-full relative">
           <div className="h-full bg-black w-2/3">
             <div className="flex flex-col justify-center h-full text-white gap-4 w-1/2 mx-auto">
               <h1 className="text-[5rem]">Hi I&apos;m Mercy,</h1>
@@ -18,9 +20,12 @@ export default function Home() {
                   <TypeAnimation />
                 </span>
               </p>
+              <button className="w-fit py-2 px-6 bg-gray-700/20 rounded-md border border-gray-700 mt-7 hover:bg-white hover:text-black flex items-center gap-2">
+                Get in touch <FaArrowRight />
+              </button>
               <Image
                 alt="hero-image"
-                src="/heropage-test3.png"
+                src="/main.png"
                 width={600}
                 height={600}
                 className="absolute bottom-0 right-80"
@@ -28,7 +33,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-1/3 h-full bg-[#91FF00]"></div>
+          <div className="w-1/3 h-full bg-[#91FF00] flex justify-end items-center">
+            <SideSkills />
+          </div>
         </div>
       </section>
       <About />
