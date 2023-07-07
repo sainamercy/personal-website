@@ -4,13 +4,25 @@ import Image from "next/image";
 function SideSkills() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h3 className="transform: rotate-90 flex items-center gap-2 mb-16">
+      <h3 className="transform: rotate-90 flex items-center gap-2 mb-16 font-semibold">
         MY EXPERTISE <FaMinus className="text-4xl text-white" />
       </h3>
       <div className="flex flex-col items-center justify-center gap-4">
-        <Image src="/sketch.svg" alt="Sketch" width={45} height={45} />
-        <Image src="/html_5.svg" alt="html" width={45} height={45} />
-        <Image src="/css_3.svg" alt="css" width={45} height={45} />
+        <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+          <Image src="/html.jpg" alt="html" width={30} height={30} />
+        </div>
+        <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+          <Image src="/css.png" alt="css" width={25} height={25} />
+        </div>
+        <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+          <Image src="/js.png" alt="js" width={25} height={25} />
+        </div>
+        <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+          <Image src="/react.png" alt="react" width={30} height={30} />
+        </div>
+        <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
+          <Image src="/ruby.png" alt="ruby" width={30} height={30} />
+        </div>
       </div>
     </div>
   );
