@@ -9,10 +9,10 @@ function SideSkills() {
       </h3>
       <div className="flex flex-col items-center justify-center gap-4">
         <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
-          <Image src="/html.jpg" alt="html" width={30} height={30} />
+          <Image src="/html_5.svg" alt="html" width={30} height={30} />
         </div>
         <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
-          <Image src="/css.png" alt="css" width={25} height={25} />
+          <Image src="/css_3.svg" alt="css" width={30} height={30} />
         </div>
         <div className="flex items-center justify-center w-12 h-12 bg-white rounded-full">
           <Image src="/js.png" alt="js" width={25} height={25} />
