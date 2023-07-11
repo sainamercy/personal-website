@@ -1,17 +1,40 @@
+"use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 function NavBar() {
+  const [navBg, setNavBg] = useState("");
+  const [textCl, setTextCl] = useState("");
+  const [navShad, setNavShad] = useState("");
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setNavBg("white");
+        setTextCl("black");
+        setNavShad("lg");
+      } else {
+        setNavBg("");
+        setTextCl("white");
+        setNavShad("");
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
   return (
-    <nav className="h-24 z-10 fixed top-0 w-full">
+    <nav
+      className={`h-24 z-10 fixed top-0 w-full shadow-${navShad} bg-${navBg}`}
+    >
       <div className="xl:[85%] lg:w-[90%] w-[95%] mx-auto h-full flex justify-between items-center text-white">
         <Link
           href="#home"
-          className="lg:text-4xl text-2xl font-semibold whitespace-nowrap"
+          className={`lg:text-4xl text-2xl font-semibold whitespace-nowrap text-${textCl}`}
         >
           Mercy Saina<span className="text-[#91FF00]">.</span>
         </Link>
-        <ul className="lg:flex items-center justify-evenly h-full w-1/2 hidden font-semibold xl:w-1/3">
+        <ul
+          className={`lg:flex items-center justify-evenly h-full w-1/2 hidden font-semibold xl:w-1/3 text-${textCl}`}
+        >
           <li>
             <Link href="#home">HOME</Link>
           </li>
