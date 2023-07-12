@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Jost } from "next/font/google";
 
-const poppins = Poppins({
+const jost = Jost({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={jost.className}>{children}</body>
     </html>
   );
 }
