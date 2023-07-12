@@ -23,7 +23,7 @@ function NavBar() {
   }, []);
   return (
     <nav
-      className={`h-24 z-10 fixed top-0 w-full shadow-${navShad} bg-${navBg}`}
+      className={`h-20 z-10 fixed top-0 w-full shadow-${navShad} bg-${navBg}`}
     >
       <div className="xl:[85%] lg:w-[90%] w-[95%] mx-auto h-full flex justify-between items-center text-white">
         <Link
@@ -36,16 +36,24 @@ function NavBar() {
           className={`lg:flex items-center justify-evenly h-full w-1/2 hidden font-semibold xl:w-1/3 text-${textCl}`}
         >
           <li>
-            <Link href="#home">HOME</Link>
+            <Link href="#home" className="cool-link">
+              HOME
+            </Link>
           </li>
           <li>
-            <Link href="#about">WHAT I DO</Link>
+            <Link href="#about" className="cool-link">
+              WHAT I DO
+            </Link>
           </li>
           <li>
-            <Link href="#about">PROJECTS</Link>
+            <Link href="#about" className="cool-link">
+              PROJECTS
+            </Link>
           </li>
           <li>
-            <Link href="#about">CONTACT</Link>
+            <Link href="#about" className="cool-link">
+              CONTACT
+            </Link>
           </li>
         </ul>
         <div className="w-1/5 h-full lg:flex justify-center items-center hidden">
