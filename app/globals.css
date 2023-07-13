@@ -19,3 +19,6 @@
 .cool-link:hover::after {
     width: 100%;
 }
+.custom-shadow{
+    box-shadow: rgba(164, 163, 163, 0.24) 0px 3px 8px;
+}

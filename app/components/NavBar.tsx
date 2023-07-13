@@ -28,7 +28,7 @@ function NavBar() {
       <div className="xl:[85%] lg:w-[90%] w-[95%] mx-auto h-full flex justify-between items-center text-white">
         <Link
           href="#home"
-          className={`lg:text-4xl text-2xl font-semibold whitespace-nowrap text-${textCl}`}
+          className={`lg:text-4xl text-2xl font-semibold whitespace-nowrap cool-link text-${textCl}`}
         >
           Mercy Saina<span className="text-[#91FF00]">.</span>
         </Link>
